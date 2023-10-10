@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
 
     public float speed = 200;
 
-    private void Awake()
+    private void Start()
     {
         stateMachine = new PlayerStateMachine(this);
     }
