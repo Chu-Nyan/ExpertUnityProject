@@ -16,8 +16,6 @@ public class PlayerStateMachine : StateMachine
         set { movement = value; }
     }
 
-    public event Action ChangedMovement;
-
     public PlayerStateMachine(Player player)
     {
         this.player = player;
