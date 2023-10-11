@@ -19,6 +19,7 @@ public class NpcStateMachine : StateMachine
         this.npc = npc;
         transform = npc.transform;
         startPos = npc.transform.position;
+        targetPos = npc.gazeTarget;
 
         idleState = new NpcIdleState(this);
         patrolState = new NpcPatrolState(this);

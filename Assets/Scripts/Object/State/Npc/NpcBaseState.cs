@@ -26,7 +26,7 @@ public class NpcBaseState : IState
     {
         if (stateMachine.targetPos != null)
         {
-
+            stateMachine.ChangeState(stateMachine.gazeState);
         }
     }
 }
