@@ -7,6 +7,7 @@ public class Player : Unit
     public Camera myCamera;
     public PlayerInput InputActions;
     public Transform mesh;
+    public Rigidbody _rigid;
 
     public float speed = 200;
 
@@ -14,4 +15,6 @@ public class Player : Unit
     {
         stateMachine = new PlayerStateMachine(this);
     }
+
+
 }

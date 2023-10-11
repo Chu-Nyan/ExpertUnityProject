@@ -210,7 +210,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: -10}
+  m_LocalPosition: {x: 0, y: 1.1928203, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1114,7 +1114,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 820084049}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: -10}
+  m_LocalPosition: {x: 0, y: 1.1928203, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1207,7 +1207,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28634
+  m_Name: pb_Mesh38482
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -1495,8 +1495,8 @@ MonoBehaviour:
   m_ZDamping: 1
   m_TargetMovementOnly: 1
   m_ScreenX: 0.5
-  m_ScreenY: 0.5
-  m_CameraDistance: 10
+  m_ScreenY: 0.7
+  m_CameraDistance: 3
   m_DeadZoneWidth: 0
   m_DeadZoneHeight: 0
   m_DeadZoneDepth: 0
@@ -1630,7 +1630,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28688
+  m_Name: pb_Mesh38546
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -1838,10 +1838,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a8d84470d9b57a43b31b98efc8c86ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rigid: {fileID: 1612499183}
   myCamera: {fileID: 330585545}
   InputActions: {fileID: 1612499181}
   mesh: {fileID: 531813235}
+  _rigid: {fileID: 1612499183}
   speed: 400
 --- !u!114 &1612499181
 MonoBehaviour:
@@ -2151,4 +2151,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8765af212c9d2164fa88ebf4117cad11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rigid: {fileID: 0}
+  gazeDistanse: 5

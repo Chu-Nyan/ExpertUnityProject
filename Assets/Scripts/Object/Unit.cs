@@ -5,7 +5,6 @@ using UnityEngine;
 public class Unit : MonoBehaviour
 {
     protected StateMachine stateMachine;
-    public Rigidbody rigid;
 
     private void Update()
     {
