@@ -12,13 +12,10 @@ public class NpcBaseState : IState
 
     public virtual void Enter()
     {
-        Debug.Log("진입");
-
     }
 
     public virtual void Exit()
     {
-        Debug.Log("나가기");
     }
 
     public virtual void PhysicsUpdate()

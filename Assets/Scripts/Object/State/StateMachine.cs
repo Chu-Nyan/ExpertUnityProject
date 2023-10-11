@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class StateMachine
-{
+{ 
     protected IState currentState;
 
     public void ChangeState(IState state)
@@ -20,6 +20,6 @@ public abstract class StateMachine
 
     public void PhysicsUpdate()
     {
-        currentState.PhysicsUpdate();
+        currentState?.PhysicsUpdate();
     }
 }

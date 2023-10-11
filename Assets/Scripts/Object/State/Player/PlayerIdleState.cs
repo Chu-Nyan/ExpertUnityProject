@@ -3,18 +3,25 @@ using UnityEngine.InputSystem;
 
 public class PlayerIdleState : PlayerGroundState
 {
-    public PlayerIdleState(PlayerStateMachine stateMachine) : base (stateMachine)
-    {
-        this.stateMachine = stateMachine;
-    }
-    protected override void OnMoveKeyInput(InputAction.CallbackContext context)
-    {
-        base.OnMoveKeyInput(context);
-        if (stateMachine.Movement == Vector2.zero)
-            return;
+    public PlayerIdleState(PlayerStateMachine stateMachine) : base(stateMachine) { }
 
-        stateMachine.ChangeState(stateMachine.MoveState);
-
+    public override void Enter()
+    {
+        base.Enter();
     }
 
+    public override void PhysicsUpdate()
+    {
+        base.PhysicsUpdate();
+        if (stateMachine.Movement != Vector2.zero)
+        {
+            stateMachine.ChangeState(stateMachine.MoveState);
+
+        }
+    }
+
+    public override void Exit()
+    {
+        base.Exit();
+    }
 }

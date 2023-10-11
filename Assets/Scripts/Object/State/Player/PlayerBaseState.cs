@@ -12,7 +12,6 @@ public class PlayerBaseState : IState
 
     public virtual void Enter()
     {
-        AddKeyMap();
     }
 
     public virtual void PhysicsUpdate()
@@ -26,7 +25,6 @@ public class PlayerBaseState : IState
 
     public virtual void Exit()
     {
-        DelKeyMap();
     }
 
     protected virtual void AddKeyMap()
@@ -50,10 +48,11 @@ public class PlayerBaseState : IState
 
     protected virtual void Movement()
     {
+
         stateMachine.Movement = stateMachine.player.InputActions.KeyBoardActions.Move.ReadValue<Vector2>();
         Vector3 pos = GetDir().normalized;
 
-        stateMachine.player._rigid.velocity = pos *stateMachine.player.speed* Time.fixedDeltaTime;
+        stateMachine.player._rigid.AddForce(pos *stateMachine.player.speed* Time.fixedDeltaTime);
     }
 
     private Vector3 GetDir()
