@@ -7,12 +7,6 @@ public class Npc : Unit, IInteraction
     public float gazeDistanse = 5f;
     public Transform gazeTarget;
 
-    public void CheckRange(Vector3 pos)
-    {
-        //Vector3.Distance
-        //transform.position 
-    }
-
     public void Interaction()
     {
         throw new System.NotImplementedException();
