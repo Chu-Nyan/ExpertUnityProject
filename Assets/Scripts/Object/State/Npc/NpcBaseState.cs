@@ -10,23 +10,17 @@ public class NpcBaseState : IState
     }
 
 
-    public virtual void Enter()
-    {
-    }
+    public virtual void Enter(){}
 
-    public virtual void Exit()
-    {
-    }
+    public virtual void Exit() {}
 
-    public virtual void PhysicsUpdate()
-    {
-    }
+    public virtual void PhysicsUpdate(){}
 
     public virtual void Update()
     {
         if (stateMachine.targetPos != null)
         {
-            stateMachine.ChangeState(stateMachine.gazeState);
+            stateMachine.ChangeState(stateMachine.GazeState);
         }
     }
 }

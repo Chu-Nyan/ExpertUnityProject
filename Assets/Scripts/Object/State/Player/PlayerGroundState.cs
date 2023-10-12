@@ -8,7 +8,7 @@ public class PlayerGroundState : PlayerBaseState
     public override void PhysicsUpdate()
     {
         base.PhysicsUpdate();
-        if (stateMachine.player._rigid.velocity.y <= Physics.gravity.y * Time.fixedDeltaTime)
+        if (stateMachine.player.rigid.velocity.y <= Physics.gravity.y * Time.fixedDeltaTime)
         {
             stateMachine.ChangeState(stateMachine.FallState);
         }
@@ -20,6 +20,7 @@ public class PlayerGroundState : PlayerBaseState
         base.Enter();
         AddKeyMap();
     }
+
 
     public override void Exit() 
     {

@@ -12,6 +12,5 @@ public class PlayerInput : MonoBehaviour
         inputActions = new PlayerInputActions();
         KeyBoardActions = inputActions.KeyBoard;
         inputActions.Enable();
-
     }
 }

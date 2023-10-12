@@ -14,6 +14,7 @@ public class Unit : MonoBehaviour
     private void FixedUpdate()
     {
         stateMachine.PhysicsUpdate();
+
         if (transform.position.y < -10)
         {
             transform.position = Vector3.up*0.5f;

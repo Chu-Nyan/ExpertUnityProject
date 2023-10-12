@@ -17,10 +17,12 @@ public class PlayerMoveState : PlayerGroundState
     }
 
 
+
     public override void Exit()
     {
         base.Exit();
     }
+
 
     protected override void OnMoveKeyInput(InputAction.CallbackContext context)
     {
@@ -29,7 +31,6 @@ public class PlayerMoveState : PlayerGroundState
             return;
 
         stateMachine.ChangeState(stateMachine.IdleState);
-
     }
 }
 

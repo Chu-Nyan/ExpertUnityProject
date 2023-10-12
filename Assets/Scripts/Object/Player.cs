@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Player : Unit
 {
-    public Camera myCamera;
+    public Camera mainCamera;
     public PlayerInput InputActions;
     public Transform mesh;
-    public Rigidbody _rigid;
+    public Rigidbody rigid;
 
     public float speed = 200;
 
@@ -15,6 +15,4 @@ public class Player : Unit
     {
         stateMachine = new PlayerStateMachine(this);
     }
-
-
 }

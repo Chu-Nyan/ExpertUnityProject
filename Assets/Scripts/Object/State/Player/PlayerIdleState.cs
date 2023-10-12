@@ -5,10 +5,12 @@ public class PlayerIdleState : PlayerGroundState
 {
     public PlayerIdleState(PlayerStateMachine stateMachine) : base(stateMachine) { }
 
+
     public override void Enter()
     {
         base.Enter();
     }
+
 
     public override void PhysicsUpdate()
     {
@@ -16,9 +18,9 @@ public class PlayerIdleState : PlayerGroundState
         if (stateMachine.Movement != Vector2.zero)
         {
             stateMachine.ChangeState(stateMachine.MoveState);
-
         }
     }
+
 
     public override void Exit()
     {

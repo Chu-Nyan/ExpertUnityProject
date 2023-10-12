@@ -29,7 +29,7 @@ public class NpcIdleState : NpcBaseState
 
     private void ReadyForPatrol()
     {
-        stateMachine.ChangeState(stateMachine.patrolState);
+        stateMachine.ChangeState(stateMachine.PatrolState);
     }
 
 }

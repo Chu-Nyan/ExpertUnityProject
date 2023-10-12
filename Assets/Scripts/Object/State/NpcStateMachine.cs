@@ -7,9 +7,9 @@ public class NpcStateMachine : StateMachine
     public Npc npc;
     public Transform transform;
 
-    public IState idleState;
-    public IState patrolState;
-    public IState gazeState;
+    public IState IdleState { get; private set; }
+    public IState PatrolState { get; private set; }
+    public IState GazeState { get; private set; }
 
     public Vector3 startPos;
     public Transform targetPos;
@@ -21,9 +21,9 @@ public class NpcStateMachine : StateMachine
         startPos = npc.transform.position;
         targetPos = npc.gazeTarget;
 
-        idleState = new NpcIdleState(this);
-        patrolState = new NpcPatrolState(this);
-        gazeState = new NpcGazeState(this);
-        ChangeState(idleState);
+        IdleState = new NpcIdleState(this);
+        PatrolState = new NpcPatrolState(this);
+        GazeState = new NpcGazeState(this);
+        ChangeState(IdleState);
     }
 }
